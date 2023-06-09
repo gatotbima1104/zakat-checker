@@ -100,10 +100,10 @@ const App = () => {
               />
             </Form.Group>
 
-            <div className="btn d-flex gap-3 mb-5 pb-5">
-              {/* <Button variant="primary" type="submit" className="button-73">
+            <div className="btn d-flex gap-3">
+              <Button variant="primary" type="submit" className="button-73">
                 Hitung Zakat
-              </Button> */}
+              </Button>
 
               <Button
                 
@@ -115,9 +115,9 @@ const App = () => {
                   );
                   setShowModal(true);
                 }}
-                className="button-73"
+                variant="warning"
               >
-                Hitung Zakat
+                info
               </Button>
 
               <Modal show={showModal} onHide={handleCloseModal}>
@@ -138,16 +138,16 @@ const App = () => {
                 Clear
               </Button>
             </div>
-{/* 
+
             <div className="result py-5 px-3">
-              <h3 className="fs-5">Hasil hitung zakat fitrahmu</h3>
+              <h3 className="fs-5">Total Zakat Fitrahmu</h3>
               <p>
-                Zakat yang harus dibayarkan dengan uang {hasilUang} / beras
-                sebesar {hasilBeras}
+                Zakat yang harus dibayarkan dengan uang <b>{hasilUang}</b> / beras
+                sebesar <b>{hasilBeras}</b>
               </p>
-              <h1 className="fs-4">{hasilUang}</h1>
-              <h1 className="fs-4">{hasilBeras}</h1>
-            </div> */}
+              {/* <h1 className="fs-4">{hasilUang}</h1>
+              <h1 className="fs-4">{hasilBeras}</h1> */}
+            </div>
           </Form>
 
         </Container>
